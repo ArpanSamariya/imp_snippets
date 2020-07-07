@@ -1,0 +1,26 @@
+// code to extract only int from string input
+// stringstream object ss is used to pick and convert to int
+// peek : Returns the next character in the input sequence, without extracting it: The character is left as the next character to be extracted from the stream.
+
+
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+   
+        string str;
+        getline(cin,str);
+        stringstream ss(str);
+        int number;
+        vector<int> tree;
+        while(ss >> number){
+        	tree.push_back(number);
+        	if(iss.peek() == ',')iss.ignore(); 
+        }
+        for(int i = 0 ; i < tree.size(); i++){
+        	cout<<tree[i]<<" ";
+        }
+        
+    
+return 0;
+}
